@@ -28,6 +28,6 @@ public class Exercise3 {
         double discountedRevenue = revenue - discount;
 
         System.out.println("The revenue from sale: " + discountedRevenue + "$");
-        System.out.printf("Discount: %.2f$ (%.1f%%)", discount, (discount / revenue) * 100);
+        System.out.println("Discount: " + discount + " (" + (discount / revenue) * 100 + ")");
     }
 }
