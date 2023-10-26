@@ -15,8 +15,12 @@ public class Exercise6 {
 
         int sum = 0;
         int size = matrix.length;
-        for (int i = 0; i < size; i++) {
-            sum += matrix[i][i];
+        for (int row = 0; row < size; row++) {
+            for (int col = 0; col < size; col++) {
+                if (row == col) {
+                    sum += matrix[row][col];
+                }
+            }
         }
 
         System.out.println(sum);
